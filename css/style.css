@@ -1,0 +1,53 @@
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: skyblue;
+    display: block;
+    padding: 2em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+@supports ( (-webkit-appearance: none) or (-moz-appearance: none)) {
+    .switch{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        width: 4em;
+        height: 2em;
+        border-radius: 1em;
+        background-color: green;
+        outline: none;
+        transition: background-color .3s linear;
+    }
+    .switch::after {
+        content: "";
+        background-color: lightgrey;
+        display: block;
+        position: relative;
+        top: .15em;
+        left: .15em;
+        width: 1.75em;
+        height: 1.75em;
+        border-radius: 1em;
+        transition: left .3s ease-in-out;
+    }
+    .switch:checked {
+        background-color: purple;
+    }
+    .switch:checked::after {
+        left: 2.10em;
+    }
+    .groot{
+        font-size: 1.5em;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .yellow::after{
+        background-color: darkgray;
+    }
+    .yellow:checked {
+        background-color: red;
+    }
+}
