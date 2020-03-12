@@ -1,0 +1,10 @@
+.vlak {
+    position: relative;
+}
+
+.ripple {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
