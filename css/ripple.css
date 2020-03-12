@@ -1,10 +1,51 @@
 .vlak {
     position: relative;
+    overflow: hidden;
+
 }
 
 .ripple {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 1;
+}
+
+.animate{
+    animation: grow 1s ease-out;
+}
+@-webkit-keyframes grow {
+    100% {
+        -webkit-transform: scale(12);
+        opacity: 0;
+    }
+}
+@-moz-keyframes grow {
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
+}
+@-moz-keyframes grow {
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
+}
+@-ms-keyframes grow {
+    100% {
+        -webkit-transform: scale(12);
+        opacity: 0;
+    }
+}
+
+@keyframes grow {
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
 }
