@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ripple.css">
     <title>Eigen switch</title>
 </head>
+
 <body>
     <h1>Een eigen switch</h1>
-    <label>
+    <label class="vlak">
         <span>switch normaal</span>
         <input type="checkbox" class="switch">
     </label>
-    <label>
+    <label class="vlak">
         <span>switch omgezet</span>
         <input type="checkbox" checked class="switch">
     </label>
-    <label>
+    <label class="vlak">
         <span>switch groot</span>
         <input type="checkbox" class="switch groot">
     </label>
-    <label>
+    <label class="vlak">
         <span>switch andere kleur</span>
-        <input type="checkbox" class="switch yellow" >
+        <input type="checkbox" class="switch yellow">
     </label>
+    <div class="vlak" style=" height: 12em;
+    border: 1px solid black;">
+        Een test div voor de ripple
+    </div>
+    <script src="js/ripple.js"></script>
 </body>
+
 </html>
