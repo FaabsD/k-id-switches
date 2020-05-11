@@ -21,7 +21,7 @@ label{
         transition: background-color .3s linear;
     }
     .switch::after {
-        content: "";
+        /* content: ""; */
         background-color: lightgrey;
         display: block;
         position: relative;
